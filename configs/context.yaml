@@ -1,0 +1,15 @@
+# context file for the web scraper and LLM
+
+news:
+
+  # The string to use to define what to search for:
+  TOPIC: 'drone OR quadcopter OR hexacopter'
+
+  # The language code to use
+  LANGUAGE: 'en'
+
+  # The country code to use
+  COUNTRY: 'US'
+
+  # How far back in time to look for articles EXAMPLE: 1h, 7d, 1m, 1y
+  LOOKBACK: '1h'
