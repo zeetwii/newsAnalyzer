@@ -14,5 +14,9 @@ droneJSON = googleNews.get_news(context["news"]["TOPIC"])
 print(f'Found {str(len(droneJSON))} stories')
 
 for story in droneJSON:
-    print(f"\nTitle: {story['title']} \nDate: {str(story['published date'])} \nDescription: {story['description']}")
-    print("\n")
+    #print(f"\nTitle: {story['title']} \nDate: {str(story['published date'])} \nDescription: {story['description']}")
+    #print("\n")
+
+    article = googleNews.get_full_article(story['url'])
+
+    print(f"Title: {str(article.title)}")
